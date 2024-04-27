@@ -1,85 +1,44 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div class="main bg-black rounded-lg shadow-md p-10 transition-transform w-96 text-center">
+        <h1 class="text-white text-3xl font-comic-sans">
+              PEEKToor</h1><label class="text-gray-300"> Login</label>
+        <h3 class="text-lg">
+          </h3>
+        <form action="">
+            <label for="first" class="block mb-2 text-left text-white font-bold">Email:</label>
+            <input type="text" id="first" name="first" placeholder="Enter your email" class="block w-full mb-6 px-4 py-2 border border-gray-300 rounded-md focus:outline-none
+                 focus:border-green-400" required>
+ 
+            <label for="password" class="block mb-2 text-left
+             text-gray-700 font-bold">Password:</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Enter your Password"
+                   class="block w-full mb-6 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-400" required>
+ 
+            <div class="flex justify-center items-center">
+                <button type="submit" class="bg-white text-black py-2 px-6 rounded-md cursor-pointer transition-colors duration-300 hover:bg-gray-400">
+                    Login
+                </button>
+                
+            </div>
+            <label class="text-gray-300 text-center">Or</label>
+            <div class="flex justify-center items-center">
+                <button type="submit" class="bg-white text-black py-2 px-6 rounded-md cursor-pointer transition-colors duration-300 hover:bg-gray-400">
+                    Login with Google
+                </button>
+            </div>
+        </form>
+        <p class="mt-4">Not registered?
+            <!-- <a href="#" class="text-blue-500 hover:underline">Create an account</a> -->
+        </p>
     </div>
-  </header>
-
-  <RouterView />
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 </style>
