@@ -1,7 +1,7 @@
 <template>
     <div class="w-screen bg-black text-white p-3 fixed flex justify-between items-center">
         <div>
-            <a href="/dashboard" class="p5 font-inter text-white text-3xl">Peektor</a>
+            <a href="/dashboard" class="p5 font-inter text-white text-3xl">PEEKtoor</a>
         </div>
         <div>
             <a href="/home" class="text-white">Go to website</a>
@@ -52,9 +52,15 @@ export default {
             menus: [
                 {
                     id: 1,
-                    title: "NEW POST",
-                    icon: "bi bi-file-earmark-plus",
-                    to: "/new-post",
+                    title: "DASHBOARD",
+                    icon: "bi bi-speedometer2",
+                    to: "/dashboard",
+                },
+                {
+                    id: 2,
+                    title: "POST",
+                    icon: "bi bi-file-earmark-post-fill",
+                    to: "/post",
                 },
                 {
                     id: 2,
