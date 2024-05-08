@@ -20,6 +20,7 @@ const router = createRouter({
     {
      
       component: BlankLayout,
+      path: '/blank',
       children:[
         {
           path: '/login',
@@ -32,6 +33,7 @@ const router = createRouter({
     {
      
       component: DashboardLayout,
+      path: '/admin',
       children:[
         {
           path: '/dashboard',
@@ -73,7 +75,13 @@ const router = createRouter({
     },
     {
       component: NavbarLayoutVue,
+      path: '/',
       children: [
+        {
+          path: '',
+          name: 'home-index',
+          component: IndexView,
+        },
         {
           path: '/home',
           name: 'home',

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen bg-black text-white p-3 fixed flex justify-between items-center">
+    <div class="w-screen bg-black text-white p-3 fixed flex justify-between items-center z-50">
         <div>
             <a href="/dashboard" class="p5 font-inter text-white text-3xl">PEEKtoor</a>
         </div>
@@ -34,7 +34,7 @@
             </div>
 
         </div>
-        <div class="p-5 mt-16 w-full">
+        <div class="p-5 mt-16 w-full relative">
             <RouterView />
         </div>
     </div>
